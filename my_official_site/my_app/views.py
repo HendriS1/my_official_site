@@ -123,6 +123,14 @@ def create_user(request):
 
 
 def logout_user(request):
+    """
+    This method will take a http request and returns a http
+    response. For example HTML documents
+
+    :param request: http request
+
+    :return: http response home.html. Goes to the home page.
+    """
     logout(request)
     messages.success(request, "You Were Logged Out!!")
     return HttpResponseRedirect('/')
