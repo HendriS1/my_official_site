@@ -49,6 +49,18 @@ def user_login(request):
 
 
 def authenticate_user(request):
+    """
+    This method will take a http request and returns a http
+    response. For example HTML documents. 
+    Authenticates the user with build in authentication system
+
+    :param request: http request
+
+    :return: if user is not authenticated http response login.html.
+     Goes to the login page.
+     else user is authenticated http response user.html.
+     Goes to user page.
+    """
     username = request.POST['username']
     password = request.POST['password']
     user = authenticate(username=username, password=password)
