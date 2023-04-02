@@ -22,6 +22,15 @@ def index(request):
 
 
 def events(request):
+    """
+    This method will take a http request and return a http 
+    response. For example HTML documents
+    Displays all the objects in models.py
+
+    :param request: http request
+
+    :return: http response event.html. Goes to events page
+    """
     all_events = Event.objects.all()
     return render(request, 'my_app/event.html',
                   {'all_events': all_events})
