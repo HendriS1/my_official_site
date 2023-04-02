@@ -92,6 +92,18 @@ def show_user(request):
 
 
 def create_user(request):
+    """
+    This method will take a http request and returns a http
+    response. For example HTML documents.
+    Create new user with build in UserCreationForm 
+
+    :param request: http request
+
+    :return: if form is valid  http response login.html.
+     Goes to the login page.
+     else user is not valid http response create_user.html.
+     Goes to create user page.
+    """
     if request.method == "POST":
         form = UserCreationForm(request.POST)
         if form.is_valid():
