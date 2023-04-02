@@ -37,6 +37,14 @@ def events(request):
 
 
 def user_login(request):
+    """
+    This method will take a http request and returns a http
+    response. For example HTML documents
+
+    :param request: http request
+
+    :return: http response login.html. Goes to the login page.
+    """
     return render(request, 'my_app/login.html')
 
 
