@@ -76,6 +76,14 @@ def authenticate_user(request):
 
 
 def show_user(request):
+    """
+    This method will take a http request and returns a http
+    response. For example HTML documents
+
+    :param request: http request
+
+    :return: http response user.html. Goes to the user page.
+    """
     print(request.user.username)
     return render(request, 'my_app/user.html', {
         "username": request.user.username,
