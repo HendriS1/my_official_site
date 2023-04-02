@@ -6,10 +6,18 @@ from django.http import HttpResponseRedirect
 from django.urls import reverse
 from django.contrib import messages
 
+
 # Create your views here.
 
-
 def index(request):
+    """
+    This method will take a http request and returns a http
+    response. For example HTML documents
+
+    :param request: http request
+
+    :return: http response home.html. Goes to the home page.
+    """
     return render(request, 'my_app/home.html')
 
 
