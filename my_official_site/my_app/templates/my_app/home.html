@@ -1,0 +1,76 @@
+{% extends 'my_app/base.html' %}
+{% load static %}
+{{ '<' }}{{ '!DOCTYPE html>'}}
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="'{% static 'my_app/style.css' %}">
+
+</head>
+{% block content %}
+
+<body>
+
+<div class="mb-4 text-center my-3">
+    <h1>Welcome to Our Website</h1>
+</div>
+
+<br>
+<p>Euphoric Nebula is a genre-defying band that creates music that is both ethereal and intense.
+    Their sound is characterized by soaring melodies, intricate instrumentation,
+    and powerful vocals that transport listeners to another realm. Founded in 2015,
+    the band quickly gained a following for their unique approach to songwriting and
+    their electrifying live performances. Their music draws from a diverse range of influences,
+    including psychedelic rock, post-rock, and dream pop, resulting in a sound that is both
+    mesmerizing and unpredictable. Their debut album, titled Cosmic Dreams, was released
+    to critical acclaim and showcased the band's ability to craft songs that are both introspective and expansive.
+    With a reputation for their dynamic live shows and a commitment to pushing boundaries and exploring new sonic
+    territory, Euphoric Nebula is a band that is sure to leave a lasting impression.</p>
+<br>
+
+<div class="text-center">
+    <img src="{% static 'my_app/image.jpg' %}" width="500" class="rounded">
+</div>
+
+<div class="mb-4 text-center my-3">
+    <h3>Members</h3>
+</div>
+
+<p>
+    Welcome to the online home of Euphoric Nebula! We invite you to register to become a user of our website
+    and join our community of music lovers. As a user, you'll have access to exclusive content,
+    including behind-the-scenes footage, interviews with band members, and early access to new music releases.
+    You'll also be able to connect with other fans from around the world, share your own experiences,
+    and stay up-to-date on all the latest news and events. Our website is designed to be a hub for
+    everything related to Euphoric Nebula, from music and merchandise to tour dates and fan meetups.
+    So don't wait - sign up today and join the Euphoric Nebula community!
+</p>
+<br>
+<div class="mb-4 text-center my-3">
+    <h3>Register To Login & View Events</h3>
+    <br>
+    <p>
+        If you're a fan of music that transports you to otherworldly dimensions,
+        then you won't want to miss out on registering for Euphoric Nebula's website.
+        By joining their online community, you'll be the first to know about new music
+        releases, upcoming shows, and exclusive merchandise drops. Don't miss your chance
+        to connect with other like-minded fans and experience the ethereal sounds of Euphoric Nebula.
+        Sign up now and prepare to be whisked away on a sonic journey.
+    </p>
+</div>
+
+<div class="mb-4 text-center my-3">
+    {% if user.is_authenticated %}
+    <a class="btn btn-dark" href="{% url 'events' %}" role="button">View Events</a>
+    {% else %}
+    <h3>Log In To View Events</h3>
+    {% endif %}
+</div>
+
+{% endblock %}
+</body>
+</html>

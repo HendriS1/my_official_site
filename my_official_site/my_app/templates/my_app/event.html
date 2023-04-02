@@ -1,0 +1,40 @@
+{% extends 'my_app/base.html' %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+</head>
+<body>
+{% block content %}
+
+<div class="mb-4 text-center my-3">
+    <h1>Events</h1>
+</div>
+
+{% for event in all_events %}
+
+<br>
+<div class="card text-center">
+    <div class="card-header">
+        <strong>{{ event.name }}</strong>
+    </div>
+    <div class="card-body">
+        <h5 class="card-title">{{ event.venue }}</h5>
+        <p class="card-text">{{ event.description }}</p>
+        <h6>Manager: {{ event.manager }}</h6>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+    <div class="card-footer text-muted">
+        {{ event.event_date }}
+    </div>
+</div>
+
+{% endfor %}
+{% endblock %}
+
+</body>
+</html>
