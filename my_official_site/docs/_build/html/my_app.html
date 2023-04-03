@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>my_app package &mdash; django_app 00.00.01 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="my_app.migrations package" href="my_app.migrations.html" />
+    <link rel="prev" title="my_app" href="modules.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            django_app
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">my_app</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">my_app package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#subpackages">Subpackages</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="my_app.migrations.html">my_app.migrations package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-my_app.admin">my_app.admin module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-my_app.apps">my_app.apps module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#my_app.apps.MyAppConfig"><code class="docutils literal notranslate"><span class="pre">MyAppConfig</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-my_app.models">my_app.models module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#my_app.models.Event"><code class="docutils literal notranslate"><span class="pre">Event</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-my_app.tests">my_app.tests module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-my_app.urls">my_app.urls module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-my_app.views">my_app.views module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#my_app.views.authenticate_user"><code class="docutils literal notranslate"><span class="pre">authenticate_user()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#my_app.views.create_user"><code class="docutils literal notranslate"><span class="pre">create_user()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#my_app.views.events"><code class="docutils literal notranslate"><span class="pre">events()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#my_app.views.index"><code class="docutils literal notranslate"><span class="pre">index()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#my_app.views.logout_user"><code class="docutils literal notranslate"><span class="pre">logout_user()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#my_app.views.show_user"><code class="docutils literal notranslate"><span class="pre">show_user()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#my_app.views.user_login"><code class="docutils literal notranslate"><span class="pre">user_login()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-my_app">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">django_app</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">my_app</a></li>
+      <li class="breadcrumb-item active">my_app package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/my_app.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="my-app-package">
+<h1>my_app package<a class="headerlink" href="#my-app-package" title="Permalink to this heading"></a></h1>
+<section id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this heading"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="my_app.migrations.html">my_app.migrations package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="my_app.migrations.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="my_app.migrations.html#module-my_app.migrations.0001_initial">my_app.migrations.0001_initial module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="my_app.migrations.html#my_app.migrations.0001_initial.Migration"><code class="docutils literal notranslate"><span class="pre">Migration</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="my_app.migrations.html#my_app.migrations.0001_initial.Migration.dependencies"><code class="docutils literal notranslate"><span class="pre">Migration.dependencies</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="my_app.migrations.html#my_app.migrations.0001_initial.Migration.initial"><code class="docutils literal notranslate"><span class="pre">Migration.initial</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="my_app.migrations.html#my_app.migrations.0001_initial.Migration.operations"><code class="docutils literal notranslate"><span class="pre">Migration.operations</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="my_app.migrations.html#module-my_app.migrations.0002_rename_events_event">my_app.migrations.0002_rename_events_event module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="my_app.migrations.html#my_app.migrations.0002_rename_events_event.Migration"><code class="docutils literal notranslate"><span class="pre">Migration</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="my_app.migrations.html#my_app.migrations.0002_rename_events_event.Migration.dependencies"><code class="docutils literal notranslate"><span class="pre">Migration.dependencies</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="my_app.migrations.html#my_app.migrations.0002_rename_events_event.Migration.operations"><code class="docutils literal notranslate"><span class="pre">Migration.operations</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="my_app.migrations.html#module-my_app.migrations">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading"></a></h2>
+</section>
+<section id="module-my_app.admin">
+<span id="my-app-admin-module"></span><h2>my_app.admin module<a class="headerlink" href="#module-my_app.admin" title="Permalink to this heading"></a></h2>
+</section>
+<section id="module-my_app.apps">
+<span id="my-app-apps-module"></span><h2>my_app.apps module<a class="headerlink" href="#module-my_app.apps" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="my_app.apps.MyAppConfig">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">my_app.apps.</span></span><span class="sig-name descname"><span class="pre">MyAppConfig</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_module</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/my_app/apps.html#MyAppConfig"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#my_app.apps.MyAppConfig" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">AppConfig</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="my_app.apps.MyAppConfig.default_auto_field">
+<span class="sig-name descname"><span class="pre">default_auto_field</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'django.db.models.BigAutoField'</span></em><a class="headerlink" href="#my_app.apps.MyAppConfig.default_auto_field" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="my_app.apps.MyAppConfig.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'my_app'</span></em><a class="headerlink" href="#my_app.apps.MyAppConfig.name" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-my_app.models">
+<span id="my-app-models-module"></span><h2>my_app.models module<a class="headerlink" href="#module-my_app.models" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="my_app.models.Event">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">my_app.models.</span></span><span class="sig-name descname"><span class="pre">Event</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/my_app/models.html#Event"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#my_app.models.Event" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></p>
+<p>This is a database-driven component that stores a single
+Event entry. Each attribute represents a database field.</p>
+<dl class="py exception">
+<dt class="sig sig-object py" id="my_app.models.Event.DoesNotExist">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DoesNotExist</span></span><a class="headerlink" href="#my_app.models.Event.DoesNotExist" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ObjectDoesNotExist</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="my_app.models.Event.MultipleObjectsReturned">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MultipleObjectsReturned</span></span><a class="headerlink" href="#my_app.models.Event.MultipleObjectsReturned" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">MultipleObjectsReturned</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="my_app.models.Event.description">
+<span class="sig-name descname"><span class="pre">description</span></span><a class="headerlink" href="#my_app.models.Event.description" title="Permalink to this definition"></a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="my_app.models.Event.event_date">
+<span class="sig-name descname"><span class="pre">event_date</span></span><a class="headerlink" href="#my_app.models.Event.event_date" title="Permalink to this definition"></a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="my_app.models.Event.get_next_by_event_date">
+<span class="sig-name descname"><span class="pre">get_next_by_event_date</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">field=&lt;django.db.models.fields.DateTimeField:</span> <span class="pre">event_date&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_next=True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">**kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#my_app.models.Event.get_next_by_event_date" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="my_app.models.Event.get_previous_by_event_date">
+<span class="sig-name descname"><span class="pre">get_previous_by_event_date</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">field=&lt;django.db.models.fields.DateTimeField:</span> <span class="pre">event_date&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_next=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">**kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#my_app.models.Event.get_previous_by_event_date" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="my_app.models.Event.id">
+<span class="sig-name descname"><span class="pre">id</span></span><a class="headerlink" href="#my_app.models.Event.id" title="Permalink to this definition"></a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="my_app.models.Event.manager">
+<span class="sig-name descname"><span class="pre">manager</span></span><a class="headerlink" href="#my_app.models.Event.manager" title="Permalink to this definition"></a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="my_app.models.Event.name">
+<span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#my_app.models.Event.name" title="Permalink to this definition"></a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="my_app.models.Event.objects">
+<span class="sig-name descname"><span class="pre">objects</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;django.db.models.manager.Manager</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#my_app.models.Event.objects" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="my_app.models.Event.venue">
+<span class="sig-name descname"><span class="pre">venue</span></span><a class="headerlink" href="#my_app.models.Event.venue" title="Permalink to this definition"></a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-my_app.tests">
+<span id="my-app-tests-module"></span><h2>my_app.tests module<a class="headerlink" href="#module-my_app.tests" title="Permalink to this heading"></a></h2>
+</section>
+<section id="module-my_app.urls">
+<span id="my-app-urls-module"></span><h2>my_app.urls module<a class="headerlink" href="#module-my_app.urls" title="Permalink to this heading"></a></h2>
+</section>
+<section id="module-my_app.views">
+<span id="my-app-views-module"></span><h2>my_app.views module<a class="headerlink" href="#module-my_app.views" title="Permalink to this heading"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="my_app.views.authenticate_user">
+<span class="sig-prename descclassname"><span class="pre">my_app.views.</span></span><span class="sig-name descname"><span class="pre">authenticate_user</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/my_app/views.html#authenticate_user"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#my_app.views.authenticate_user" title="Permalink to this definition"></a></dt>
+<dd><p>This method will take a http request and returns a http
+response. For example HTML documents.
+Authenticates the user with build in authentication system</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>request</strong> – http request</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>if user is not authenticated http response login.html.
+Goes to the login page.
+else user is authenticated http response user.html.
+Goes to user page.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="my_app.views.create_user">
+<span class="sig-prename descclassname"><span class="pre">my_app.views.</span></span><span class="sig-name descname"><span class="pre">create_user</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/my_app/views.html#create_user"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#my_app.views.create_user" title="Permalink to this definition"></a></dt>
+<dd><p>This method will take a http request and returns a http
+response. For example HTML documents.
+Create new user with build in UserCreationForm</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>request</strong> – http request</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>if form is valid  http response login.html.
+Goes to the login page.
+else user is not valid http response create_user.html.
+Goes to create user page.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="my_app.views.events">
+<span class="sig-prename descclassname"><span class="pre">my_app.views.</span></span><span class="sig-name descname"><span class="pre">events</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/my_app/views.html#events"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#my_app.views.events" title="Permalink to this definition"></a></dt>
+<dd><p>This method will take a http request and return a http
+response. For example HTML documents
+Displays all the objects in models.py</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>request</strong> – http request</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>http response event.html. Goes to events page</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="my_app.views.index">
+<span class="sig-prename descclassname"><span class="pre">my_app.views.</span></span><span class="sig-name descname"><span class="pre">index</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/my_app/views.html#index"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#my_app.views.index" title="Permalink to this definition"></a></dt>
+<dd><p>This method will take a http request and returns a http
+response. For example HTML documents</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>request</strong> – http request</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>http response home.html. Goes to the home page.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="my_app.views.logout_user">
+<span class="sig-prename descclassname"><span class="pre">my_app.views.</span></span><span class="sig-name descname"><span class="pre">logout_user</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/my_app/views.html#logout_user"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#my_app.views.logout_user" title="Permalink to this definition"></a></dt>
+<dd><p>This method will take a http request and returns a http
+response. For example HTML documents</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>request</strong> – http request</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>http response home.html. Goes to the home page.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="my_app.views.show_user">
+<span class="sig-prename descclassname"><span class="pre">my_app.views.</span></span><span class="sig-name descname"><span class="pre">show_user</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/my_app/views.html#show_user"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#my_app.views.show_user" title="Permalink to this definition"></a></dt>
+<dd><p>This method will take a http request and returns a http
+response. For example HTML documents</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>request</strong> – http request</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>http response user.html. Goes to the user page.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="my_app.views.user_login">
+<span class="sig-prename descclassname"><span class="pre">my_app.views.</span></span><span class="sig-name descname"><span class="pre">user_login</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/my_app/views.html#user_login"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#my_app.views.user_login" title="Permalink to this definition"></a></dt>
+<dd><p>This method will take a http request and returns a http
+response. For example HTML documents</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>request</strong> – http request</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>http response login.html. Goes to the login page.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-my_app">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-my_app" title="Permalink to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="modules.html" class="btn btn-neutral float-left" title="my_app" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="my_app.migrations.html" class="btn btn-neutral float-right" title="my_app.migrations package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Hendri.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
