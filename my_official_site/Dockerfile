@@ -2,10 +2,14 @@ FROM python:3.12.0a6-slim-buster
 
 WORKDIR /app
 
-COPY ./requirements.txt /requirements.txt
+ADD . /app/
+
+EXPOSE 8000
+
+COPY requirements.txt /app
 
 RUN pip install -r /requirements.txt
 
-COPY . .
+COPY . /app
 
-CMD ["python3", "manage.py", "runserver", "0.0.0.0:8000"]
+CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
