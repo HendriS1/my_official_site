@@ -7,7 +7,7 @@
 * This project can be expanded on to create additional pages etc.
 ---
 ### Image of Events page.
-![](Images/Screenshot%202023-04-06%20210827.png)
+![](Images/Screenshot%202023-04-06%20235340.png)
 ---
 ## WHY I BUILT THIS PROJECT
 ---
@@ -43,20 +43,20 @@
 ---
 ## DOCKER HUB Quickstart
 * Go to the following website for detailed instructions on how to get started with Docker Hub to be able to START THE DJANGO APP WITH DOCKER.
-[](http://docs.docker.com/docker-hub/quickstart/)
+(http://docs.docker.com/docker-hub/quickstart/)
 ---
 ### Image of the Home page
-![](Images/Screenshot%202023-04-06%20235340.png)
+![](Images/Screenshot%202023-04-06%20210827.png)
 ---
 ## STARTING DJANGO APP WITH DOCKER
 ---
-* Go to [](http://hub.docker.com/repository/docker/hendris1/my_official_site/tags?page=1&ordering=last_updated)
+* Go to (http://hub.docker.com/repository/docker/hendris1/my_official_site/tags?page=1&ordering=last_updated)
 * Copy the pull command
 * Paste the pull command in your command prompt and press enter
 ##### This will download the Docker Image from the internet
 ##### After this is done, type the following in the command prompt.
 - docker run -d -p 8000:8000 "the docker image name/it is written with the pull command"
-- After go to http://127.0.0.1:8000
+- After go to (http://127.0.0.1:8000)
 ##### Type the following to stop your image.
 - docker stop "first 3 characters of docker image id"
 ---
